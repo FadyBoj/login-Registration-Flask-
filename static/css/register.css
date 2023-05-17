@@ -1,0 +1,219 @@
+body{
+    background-color: #0d1117;  
+}
+
+.cont
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.btn-success{
+    width: 50%;
+    font-size: 18px;
+    background-color: #00851b;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: ##238636;
+    --bs-btn-border-color: #238636;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #079f25;
+    --bs-btn-hover-border-color: #146c43;
+    --bs-btn-focus-shadow-rgb: 60,153,110;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #146c43;
+    --bs-btn-active-border-color: #13653f;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #198754;
+    --bs-btn-disabled-border-color: #198754;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    min-height: 85%;
+    border:solid grey 2px;
+    border-radius: 20px;
+    color: #c9d1d9;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #161b22;
+}
+
+.flName{
+    width: 100%;
+    gap:40px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.rInput{
+    width: 100%;
+    height: 35px;
+    padding: 4px;
+    padding-left: 10px;
+    border: solid 1px #21262d;
+    background-color: #0d1117;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #c9d1d9;
+    text-rendering: auto;
+    
+}
+
+.special{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    border: solid 1px #21262d;
+    background-color: #0d1117;
+    border-radius: 6px;
+    font-weight: 500;
+    accent-color: green ;
+}
+
+.rInput:focus,.special:focus{
+    outline: none ;
+    border:2px solid #58a6ff;
+}
+
+.flWarn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.rWarning{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+    gap:10px;
+    color: #9b211b;;
+    opacity: 0;
+    border: unset;outline: unset;
+    height:0px;
+    margin-top:20px;
+    padding-left: 5px;
+
+}
+
+.warningIcon{
+    color: #9b211b;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-top:7px;
+}
+
+.checkB{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: start;
+    gap:10px;
+    padding-left: 5px;
+    color: grey;
+}
+
+.checkBox{
+    width: 20px;
+    height: 20px;
+    margin-top:4px;
+    accent-color: #0275d8;
+    border:solid #0275d8 2px;
+}
+
+label{
+    font-size: 14px;
+}
+
+#boot{
+    width: 100%;
+    font-size: 17px;
+}
+
+p{
+    font-weight: 400;
+}
+
+span{
+    color: #58a6ff;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: unset;
+}
+
+@media (max-width:800px)
+{
+    .cont{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    @media (max-width:500px)
+    {
+        label{
+            font-size: 10px;
+        }
+        .rInput{
+            font-size: 12px;
+        }
+        p{
+            font-size: 11px;
+
+        }
+        .cont{
+            padding-left: 2px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+    
+        }
+
+        .flName{
+            gap:10px;
+        }
+        .warning{
+            font-size: 14px;
+
+        }
+
+     
+}
+
+}
+
+@media (max-width:730px)
+{
+    .rWarning{
+        font-size: 12px;
+    }
+
+    @media (max-width:440px)
+    {
+        .flName{
+            flex-direction: column;
+            gap:22px
+        }
+    }
+}
+
+@media (max-width:390px)
+{
+    
+}

@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+
+
+    <div class="Container">
+        <h1>Sign in</h1><br>
+{%if "created" in session %}
+<div  class="alert alert-success alert-dismissible fade show successMsg Create" role="alert">
+  <b>Congratulations</b>, Your account has been successfully created !
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+    <p>{{ session.pop("created", None) }}</p>
+{% endif %}
+
+{%if "exsist" in session %}
+
+<div  class="alert alert-danger alert-dismissible fade show successMsg" role="alert">
+  We've found an existing account with this email address. Please continue to log in with your account email
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+    <p>{{ session.pop("exsist", None) }}</p>
+{% endif %}
+
+{%if "invalidLogin" in session %}
+
+<div  class="alert alert-danger alert-dismissible fade show successMsg" role="alert">
+  Invalid Username or Password
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+    <p>{{ session.pop("invalidLogin", None) }}</p>
+{% endif %}
+        <form id="signForm" action="#" method="POST">
+            <div class="signLabel">
+            <label>Email Address</label>
+            <input name="email"  class="inpt email" type="text"  placeholder="Enter  Email">
+            </div>
+
+            <div class="warning">
+            <div><ion-icon class="warningIcon" name="alert-circle-outline"></ion-icon></div>
+            <div class="errorMsg">dfdf</div>
+        </div>
+            <br>
+
+            <div class="signLabel">
+            <div class="passLabel">
+            <div>Password</div>
+            <div class="forgotPassword">Forgot password ?</div>
+            </div>
+            <input name="password" class="inpt pass" type="password"   placeholder="Enter  Password">
+            </div>
+
+            <div class="warning">
+                <div><ion-icon class="warningIcon" name="alert-circle-outline"></ion-icon></div>
+                <div class="errorMsg"></div>
+            </div>
+                <br>
+
+            
+            <div id="formButton">
+                <button type="submit" id="boot" class="btn btn-success">Sign in</button>
+
+            </div>
+        </form>
+    </div>
+    {% endblock %}

@@ -1,0 +1,124 @@
+*{
+    font-weight: 700;
+    padding:0px;
+    margin:0px;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+body{
+    scroll-behavior: smooth;
+    background-color: white;
+}
+
+.Navbar{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: start;
+    width: 100%;
+    height: 100px;
+    gap:0px;
+    margin-bottom: 20px;
+    background-color: #161b22;
+    padding-left: 30px;
+    transition: all 300ms;
+    overflow: hidden;
+    color:white;
+    text-rendering: auto;
+    box-shadow: 0px 9px 16px -1px rgba(0,0,0,0.34);
+    -webkit-box-shadow: 0px 9px 16px -1px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 9px 16px -1px rgba(0,0,0,0.34);
+    z-index: 12;
+    position: relative;
+
+}
+
+.Navbar .item{
+    margin-bottom: 50px;
+
+}
+
+.activeNav{
+    height: 250px;
+    transition: all 300ms;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    align-items: center;
+    width: 60px;
+    min-height: 50px;
+    background-color: #161b22;
+    border: solid gray;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 150ms;
+    padding: 5px;
+}
+
+
+.menu div{
+    width: 60%;
+    height: 1.4px;
+    background-color: white;
+    transition: all 150ms;
+
+}
+
+.activeMenu{
+    border: solid white 3px;
+    transition: 250ms;
+}
+
+.activeMenu .line-1{
+    transform:translate(0px,10px) rotate(-45deg)
+    
+}
+
+
+.activeMenu .line-3{
+    transform: translate(0px,-10px) rotate(45deg)
+}
+
+.activeMenu .line-2{
+    width: 0px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    gap: 20px;
+}
+
+nav h4{
+    cursor: pointer;
+    letter-spacing: 0px;
+}
+
+#boot1{
+    width: 155px;
+}
+
+#boot2{
+    width: 155px;
+}
+
+.loading{
+    position: fixed;
+    top:0px;
+    z-index: 100;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-color: #0d1117; 
+    width: 100%;
+    height: 100%;
+}   

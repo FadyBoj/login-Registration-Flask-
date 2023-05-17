@@ -1,0 +1,111 @@
+*{
+    margin:0px;
+    padding:0px; 
+    box-sizing: border-box;
+}
+
+.Navbar{
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    box-shadow: -1px 9px 30px 0px rgba(0,0,0,0.53);
+    -webkit-box-shadow: -1px 9px 30px 0px rgba(0,0,0,0.53);
+    -moz-box-shadow: -1px 9px 30px 0px rgba(0,0,0,0.53);
+
+  }
+
+
+.profContainer{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: start;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    flex-direction: column;
+    gap:50px;
+    background: linear-gradient(to right,#0F2027,#203A43,#2C5364);
+    background-size: 200%;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+
+
+.welcome{
+    color: white;
+    text-shadow: 2px 2px 2px #0D0603;
+    transform: translateY(20px);
+    transition: all 1s;
+    opacity: 0;
+    font-size: 40px;
+}
+
+
+.btnContainer::before{
+ content: "";
+ width: 200px;
+ height: 100%;
+ border-radius:15px;
+ position: fixed;
+ z-index: 0;
+ transition: all 1s;
+}
+
+.btnContainer:hover::before{
+    background-color: #27232080;
+
+}
+
+.arrowIcon{
+    font-size: 20px;
+    transition: all 800ms;
+}
+
+
+.logoutA,.btnContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.btnContainer{
+    background-color: white;
+    border: unset;
+    background: linear-gradient(to left,#ad5389,#3c1053);
+    width: 200px;
+    height: 35px;
+    border-radius: 15px;
+    color :white;
+    cursor: pointer;
+    position: relative;
+    box-shadow: -1px 9px 30px 0px rgba(0,0,0,0.53);
+    -webkit-box-shadow: -1px 9px 30px 0px rgba(0,0,0,0.53);
+    -moz-box-shadow: -1px 9px 30px 0px rgba(0,0,0,0.53);
+    filter: blur(60%);
+    transition: all 1s;
+
+
+}
+
+.arrowContainer{
+    display: flex;
+    align-items: end;
+}
+
+.logoutBtn{
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition:all 1s;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

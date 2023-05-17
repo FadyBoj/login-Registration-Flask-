@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+    {% block body %}
+
+    <div class="cont">
+        <form id="registerForm" action="#" method="POST">
+            <h1>Sign up</h1><br>
+            <div class="flName">
+                <div class="flWarn">
+                <input class="rInput" name="first_name" type="text" placeholder="First name">
+
+                <div class="rWarning">
+                    <div><ion-icon class="warningIcon" name="alert-circle-outline"></ion-icon></div>
+                    <div class="rErrorMsg">dsda</div>    
+                </div>
+                </div>
+
+                <div class="flWarn">
+                <input class="rInput" name="last_name" type="text" placeholder="Last name">
+
+                <div class="rWarning">
+                    <div><ion-icon class="warningIcon" name="alert-circle-outline"></ion-icon></div>
+                    <div class="rErrorMsg">dsda</div>    
+                </div>
+
+                 </div>
+                
+            </div><br>
+
+            <div class="flWarn">
+            <input class="special rInput" name="email" type="text" placeholder="Email address">
+            <div class="rWarning">
+                <div><ion-icon class="warningIcon" name="alert-circle-outline"></ion-icon></div>
+                <div class="rErrorMsg">dsda</div>    
+            </div>
+            </div><br>
+            
+            <div class="flWarn">
+                <input class="special rInput" name="password" type="password" placeholder="Password">
+                <div class="rWarning specialW">
+                    <div><ion-icon class="warningIcon" name="alert-circle-outline"></ion-icon></div>
+                    <div class="rErrorMsg">dsda</div>    
+                </div>
+                </div><br><br>
+
+                <div class="checkB">
+                    <div><input class="checkBox" type="checkbox"></div>
+                    <div><label>Yes, I understand and agree to the <span>Application Terms of Service</span> , including the <span>User Agreement</span> and Privacy Policy .</label></div>    
+                </div><br>
+
+                     <div class="checkB">
+                    <div><input class="checkBox" type="checkbox"></div>
+                    <div><label>Send me helpful <span>emails</span> to find rewarding work and job leads.</label></div>    
+                </div><br>
+
+                <button type="submit" id="boot" class="btn btn-success">Sign Up</button><br><br>
+                <p>Already have an account ? <a href="{{url_for('loginPage')}}"><span>Log in</span></a></p>
+        </form>
+    </div>
+
+    {% endblock %}
